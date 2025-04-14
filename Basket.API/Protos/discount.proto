@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "Discount";
+
+package discount;
+
+service DiscountService {
+  rpc GetDiscount (DiscountRequest) returns (DiscountResponse);
+}
+
+message DiscountRequest {
+  string productId = 1;
+}
+
+message DiscountResponse {
+  string productId = 1;
+  string description = 2;
+  double amount = 3;
+}

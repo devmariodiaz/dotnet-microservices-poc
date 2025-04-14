@@ -16,6 +16,8 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 
+app.Urls.Add("http://*:80");
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

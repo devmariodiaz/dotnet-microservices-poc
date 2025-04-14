@@ -32,7 +32,7 @@ services:
     build:
       context: ./Catalog.API
     ports:
-      - "5002:8080"
+      - "5002:80"
     depends_on:
       - catalogdb
     networks:
@@ -42,7 +42,7 @@ services:
     build:
       context: ./Basket.API
     ports:
-      - "5003:8080"
+      - "5003:80"
     depends_on:
       - basketdb
     networks:
@@ -55,6 +55,17 @@ services:
       - "5004:80"
     depends_on:
       - discountdb
+    networks:
+      - backend
+
+  apigateway:
+    build:
+      context: ./ApiGateway
+    ports:
+      - "5000:80"
+    depends_on:
+      - catalog.api
+      - basket.api
     networks:
       - backend
 
