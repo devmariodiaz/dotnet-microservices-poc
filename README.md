@@ -1,6 +1,6 @@
 # E-commerce Microservices Project / Proyecto de Microservicios para E-commerce
 
-This project implements a microservices architecture for an e-commerce system using .NET 8, Docker, YARP as API Gateway, RabbitMQ for messaging, and specialized databases per service (MongoDB, Redis, PostgreSQL, MySQL).
+This project implements a microservices architecture for an e-commerce system using .NET 9, Docker, YARP as API Gateway, RabbitMQ for messaging, and specialized databases per service (MongoDB, Redis, PostgreSQL, MySQL).
 
 Este proyecto implementa una arquitectura de microservicios para un sistema de e-commerce utilizando .NET 8, Docker, YARP como API Gateway, RabbitMQ para mensajería, y bases de datos especializadas por servicio (MongoDB, Redis, PostgreSQL, MySQL).
 
